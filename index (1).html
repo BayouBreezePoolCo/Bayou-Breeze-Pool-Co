@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Home • Bayou Breeze Pool Company</title>
+<meta name="description" content="Residential & commercial pool service: monthly service, chemicals-only plans, green-to-clean, and more. East Texas.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<nav class="nav">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="Company logo" onerror="this.replaceWith(Object.assign(document.createElement('strong'),{textContent:'Pineywoods Pool Co.'}))"/>
+      <span class="name">Bayou Breeze Pool Company</span>
+    </a>
+    <ul>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="index.html#contact" class="btn">Get Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div>
+      <div class="kicker">Pool care made easy</div>
+      <h1>Crystal‑clear water, without the hassle.</h1>
+      <p>Reliable weekly service, chemicals‑only plans, and rapid green‑to‑clean. Transparent pricing. No long‑term contracts.</p>
+      <div style="display:flex;gap:12px;margin-top:10px">
+        <a class="btn" href="#contact">Request a quote</a>
+        <a class="btn ghost" href="pricing.html">See pricing</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="badge">What’s included weekly</span>
+      <h3>Monthly Pool Service (start at $185/mo)</h3>
+      <ul class="clean">
+        <li>Test & balance chemicals</li>
+        <li>Skim surface, brush walls/steps, vacuum as needed</li>
+        <li>Empty skimmer & pump baskets</li>
+        <li>Backwash/inspect filter (as appropriate)</li>
+        <li>Check equipment & report issues</li>
+        <li>Photo log on request</li>
+      </ul>
+      <p class="small" style="margin-top:8px">Deep cleans available (+$25 per visit). Optional quarterly filter clean add‑on (see pricing).</p>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="services">
+  <div class="kicker">Main services</div>
+  <h2>Choose a plan that fits your pool</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Monthly Pool Service</h3>
+      <div class="price">$185+/mo</div>
+      <p>Full weekly service—ideal for owners who want hands‑off, worry‑free care.</p>
+      <ul class="clean">
+        <li>Weekly visit & chemical balancing</li>
+        <li>Skimming, brushing, vacuum as needed</li>
+        <li>Basket emptying & equipment checks</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Monthly Chemical Service</h3>
+      <div class="price">$75+/mo</div>
+      <p>You handle cleaning—we handle the chemistry.</p>
+      <ul class="clean">
+        <li>Weekly water testing</li>
+        <li>Chemical dosing</li>
+        <li>Balance reports on request</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Green‑to‑Clean</h3>
+      <div class="price">$250</div>
+      <p>Three‑day turnaround for most green pools. Includes shock, algaecide, brushing, and filtration guidance.</p>
+      <p class="small">Price assumes standard residential pool; heavy algae may require additional chemicals/time.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="addons">
+  <div class="kicker">Popular add‑ons</div>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Filter Clean</h3>
+      <div class="price">$110 one‑time</div>
+      <p>Recommended after heavy use or when pressure rises 8–10 PSI.</p>
+      <p class="small">If added to Monthly Pool Service: +$30/mo and we perform a full filter clean every quarter.</p>
+    </div>
+    <div class="card">
+      <h3>Deep Clean</h3>
+      <div class="price">+ $25 / visit</div>
+      <p>Extra‑thorough brushing, tile/scum line detail, fine sediment removal.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="contact">
+  <div class="kicker">Get a quote</div>
+  <div class="card">
+    <p>Tell us about your pool (size, surface, filter type, any issues) and your address. We’ll reply with an exact quote.</p>
+    <form onsubmit="event.preventDefault(); alert('Thanks! We\'ll reach out shortly.');">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+        <input required placeholder="Full name" style="padding:12px;border:1px solid #cfe5f3;border-radius:10px">
+        <input required placeholder="Email" type="email" style="padding:12px;border:1px solid #cfe5f3;border-radius:10px">
+        <input placeholder="Phone" type="tel" style="padding:12px;border:1px solid #cfe5f3;border-radius:10px">
+        <input placeholder="City / ZIP" style="padding:12px;border:1px solid #cfe5f3;border-radius:10px">
+      </div>
+      <textarea placeholder="Pool details" rows="5" style="margin-top:12px;width:100%;padding:12px;border:1px solid #cfe5f3;border-radius:10px"></textarea>
+      <div style="display:flex;gap:12px;margin-top:12px">
+        <button class="btn" type="submit">Request quote</button>
+        <a class="btn ghost" href="pricing.html">See pricing</a>
+      </div>
+      <p class="small" style="margin-top:8px">No charge to quote. No long‑term contracts.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
+      <div>© <span id="yr"></span> Bayou Breeze Pool Company • Licensed & Insured</div>
+      <div class="small">Service area: East Texas • Mon–Fri</div>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+<script src="script.js"></script>
+</body></html>
